@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Fox Solutions | Desenvolvimento Web Rápido</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, sans-serif; }
+    body { background-color: #0b132b; color: #f8fafc; line-height: 1.6; }
+    
+    /* Cabeçalho */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #1c2541; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); }
+    .logo { font-size: 20px; font-weight: bold; color: #ffffff; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;}
+    .logo span { color: #3a86ff; }
+    
+    /* Hero Section */
+    .hero { padding: 50px 20px; text-align: center; background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%); }
+    .hero h1 { font-size: 32px; margin-bottom: 15px; line-height: 1.2; }
+    .hero h1 span { color: #3a86ff; }
+    .hero p { font-size: 16px; color: #a0aec0; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    
+    /* Botão WhatsApp (Azul Cruzeiro) */
+    .btn-whatsapp { display: inline-block; background-color: #3a86ff; color: #fff; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(58, 134, 255, 0.4); }
+    .btn-whatsapp:active { transform: scale(0.95); }
+
+    /* Seção de Serviços */
+    .servicos { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+    .titulo-secao { text-align: center; font-size: 24px; margin-bottom: 30px; color: #3a86ff; }
+    .grid-servicos { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    .card { background-color: #1c2541; padding: 20px; border-radius: 12px; border-left: 4px solid #3a86ff; }
+    .card h3 { font-size: 18px; margin-bottom: 10px; color: #f1f5f9; }
+    .card p { font-size: 14px; color: #a0aec0; }
+
+    /* Portfólio */
+    .portfolio { padding: 40px 20px; background-color: #0b132b; max-width: 800px; margin: 0 auto; }
+    .projeto { background-color: #1c2541; border-radius: 12px; overflow: hidden; margin-bottom: 25px; border: 1px solid #2a3b5c; }
+    .projeto-info { padding: 20px; }
+    .projeto-info h3 { color: #3a86ff; font-size: 20px; margin-bottom: 10px; }
+    .projeto-info p { font-size: 14px; color: #a0aec0; margin-bottom: 15px; }
+    .btn-projeto { display: inline-block; background-color: #3a86ff; color: #f8fafc; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: bold; }
+    
+    /* Sobre e Rodapé */
+    .sobre { padding: 40px 20px; max-width: 800px; margin: 0 auto; text-align: center; }
+    .sobre p { color: #a0aec0; margin-bottom: 15px; font-size: 15px; }
+    
+    footer { background-color: #1c2541; text-align: center; padding: 20px; font-size: 14px; color: #718096; margin-top: 30px; border-top: 2px solid #3a86ff;}
+
+    /* Responsividade para Desktop */
+    @media (min-width: 768px) {
+      .grid-servicos { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: 42px; }
+      .hero { padding: 80px 20px; }
+      .projeto { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🦊 Fox<span>Solutions</span></div>
+  </header>
+
+  <section class="hero">
+    <h1>Sites e ferramentas web <span>rápidas e sem complicação</span></h1>
+    <p>Olá, sou Marcos Felipe. Através da Fox Solutions, desenvolvo soluções digitais focadas em resultados para o seu negócio. Entregas ágeis, astutas e com código limpo.</p>
+    <!-- Lembre-se de colocar o seu número real aqui se ainda não colocou -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Marcos,%20vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." class="btn-whatsapp" target="_blank">💬 Falar no WhatsApp</a>
+  </section>
+
+  <section class="servicos">
+    <h2 class="titulo-secao">O que eu posso fazer por você?</h2>
+    <div class="grid-servicos">
+      
+      <div class="card">
+        <h3>🚀 Landing Pages Rápidas</h3>
+        <p>Páginas de vendas ou captura de leads, prontas para converter visitantes em clientes. Entrega em até 48h.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔗 Link na Bio Personalizado</h3>
+        <p>Substitua o Linktree padrão por uma página exclusiva com a identidade visual da sua marca.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛠️ Correção de Bugs (HTML/CSS)</h3>
+        <p>Seu site está quebrado no celular? Botão desalinhado? Eu resolvo o layout e a responsividade rapidamente.</p>
+      </div>
+
+      <div class="card">
+        <h3>🧮 Ferramentas e Calculadoras</h3>
+        <p>Criação de calculadoras de frete, simuladores de investimento ou formulários inteligentes para o seu negócio.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2 class="titulo-secao">Meus Projetos Recentes</h2>
+    
+    <!-- PROJETO 1: FINANÇAS -->
+    <div class="projeto">
+      <div class="projeto-info">
+        <h3>💰 App de Finanças Pessoais (PWA)</h3>
+        <p>Aplicativo web completo para controle de gastos, receitas, contas a pagar, treinos e leitura. Funciona offline e pode ser instalado no celular.</p>
+        <a href="https://fm840863-wq.github.io/meuapp/" class="btn-projeto" target="_blank">Acessar Projeto</a>
+      </div>
+    </div>
+
+    <!-- PROJETO 2: JOGO DO MÉDICO -->
+    <div class="projeto">
+      <div class="projeto-info">
+        <h3>🩺 Meu Amigo Médico (Jogo Interativo)</h3>
+        <p>Jogo web inclusivo focado no acolhimento de crianças neurodivergentes em consultas médicas. Conta com narração por voz, minijogos de coordenação e estímulos visuais calmos.</p>
+        <a href="https://fm840863-wq.github.io/jogo-m-dico/" class="btn-projeto" target="_blank">Acessar Projeto</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sobre">
+    <h2 class="titulo-secao">Sobre mim</h2>
+    <p>Sou um desenvolvedor focado em criar soluções práticas e eficientes. Acredito que a tecnologia deve simplificar a vida das pessoas, e não o contrário.</p>
+    <p>Trabalho com foco em mobile-first, garantindo que o seu projeto fique perfeito em qualquer tela, do celular ao computador.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Fox Solutions. Todos os direitos reservados.<br>
+    Desenvolvido por Marcos Felipe.
+  </footer>
+
+</body>
+</html>
